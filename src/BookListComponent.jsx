@@ -5,7 +5,7 @@ function BookListComponent(props) {
     return (
         <>
         <div>
-            {props.books.map((b) => <BookComponent book={b} id={b.key}/>)}
+            {props.books.map((b) => <BookComponent {...b}/>)}
         </div><hr/>
         </>
     )
